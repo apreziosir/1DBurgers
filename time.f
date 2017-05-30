@@ -27,7 +27,7 @@
 !	En este pedazo controlo el valor de dT para que quede fijo o no 
 !	Debo arreglarlo cuando vaya a refinar. 	
 !	dT = CN * dx / vel 
-	dT = ((tmax*1.0) / (pasos*1.0))
+!	dT = ((tmax*1.0) / (pasos*1.0))
 
 !	Calculo del numero de Courant con el dT fijo para que no se estalle	
 	CN = (vel * dT) / dx

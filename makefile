@@ -13,9 +13,11 @@ USE_INCL= scrotum.o aetas.o geom.o legendre.o map.o mound.o \
 	      lhs_gmres.o CFL.o nod2mod.o dealiasing.o
 	      
 
-FC = f95
+FC = gfortran
 
 FFLAGS = -O3 -fdefault-real-8
+
+# FFLAGS = -fbounds-check -o
 
 
 #  Compile

@@ -7,7 +7,7 @@
       subroutine solve_gmres(x,b,ain,npoin,niter)
 !     include 'param.h'
 
-      integer, parameter :: mmax = 300
+      integer, parameter :: mmax = 600
       integer :: niter
       !Solver arrays
       real ain(npoin,npoin)
@@ -20,7 +20,7 @@
       logical ifdone
 
       !set machine tolerances
-      solver_tol = 1.e-8
+      solver_tol = 1.e-4
       n=npoin
       one = 1.
       eps = 1.e-20

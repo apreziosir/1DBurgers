@@ -32,7 +32,7 @@
 	
 !	Defining value of filter for simulation (should proportional to time 
 !	gap used)	
-	filter = 3. !1.57
+	filter = 1.57
 	
 	open(10,file='Results.dat')
 	write(10,*)'# VELOCITY PROFILES IN TIME'
@@ -41,7 +41,7 @@
 	write(10,*)'# VARIABLES = z, u(z)'
 	write(10,*)'# TOTAL TIME SIMULATED (s) = ', tmax
 	write(10,*)'# APPARENT VISCOSITY USED = ', nu
-!	dT = (tmax*1.0) / (pasos*1.0)
+	dT = (tmax*1.0) / (pasos*1.0)
 	write(10,*)'# TIME GAP (s) = ', dT
 	write(10,*)'# VALUE OF FILTER USED FOR SIMULATION = ', filter
 	write(10,*)''

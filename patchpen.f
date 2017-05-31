@@ -32,7 +32,7 @@
 	real :: taul,taur,fac
 	
 ! 	Some parameters
-	fac = 0.5 !1.0
+	fac = 1.0
 	omega = 2.0 / (pd * (pd + 1.0))
 
 !  	Patching at the interfaces

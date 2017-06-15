@@ -14,7 +14,7 @@
 	real :: dT
 	
 ! 	2. Maximum number of time steps
-	integer, parameter :: tmax = 2
+	integer, parameter :: tmax = 20
 	
 ! 	3. Courant Number
 	real :: CN

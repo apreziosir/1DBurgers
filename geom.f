@@ -25,7 +25,7 @@
 	real, dimension(2) :: val    
     	
 ! (*	5. Number of time steps for the program APR *)  
-	integer, parameter :: pasos = 40000 ! = int(tmax / dT) - 1
+	integer, parameter :: pasos = 400000 ! = int(tmax / dT) - 1
 
 ! (*    6. Vector with velocities for top BC APR *)
 	real, dimension(pasos) :: crudas

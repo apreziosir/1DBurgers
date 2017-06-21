@@ -14,6 +14,7 @@
 	USE scrotum
 	USE legendre
 	USE geom
+	USE mound
 	
 	implicit none
 	
@@ -22,7 +23,7 @@
 	real, intent(in) :: delta
 	integer, intent(in) :: t
 	
-	real :: carayB,carayT,tauB,tauT,fac
+	real :: carayB,carayT,tauB,tauT
 	real :: alpha,beta,gamma,eps
 	real :: kappaB,kappaT,omega,tau
 	real :: lx,lxT,lxB
@@ -95,7 +96,7 @@
 ! 	tauB -> Coefficient for the lower subdomain (bottom of the interface)
 ! 	tauT -> Coefficient for the upper subdomain (top of the interface)
 
-	fac= 8e8 ! 1e5!7.9e8
+	!fac= 1e4 ! 1e5!7.9e8
 ! 	For bottom subdomains
 	kappaB=omega*alpha/beta
 	carayB=1.0/(omega*eps*beta)

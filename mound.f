@@ -11,6 +11,9 @@
 	save
 	
 ! 	1. Viscosity
-	real, parameter :: nu = 0.1 !0.01 / 3.141592654
+	real, parameter :: nu = 0.02 !0.01 / 3.141592654
+
+!	2. Fac en bc1dsub
+	real, parameter :: fac = 0.5
 	
 	END MODULE mound

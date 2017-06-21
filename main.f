@@ -16,7 +16,7 @@
 	USE aetas
 	
 	implicit none
-	
+
 	real, dimension(nsg) :: u
 	real, dimension(nsg) :: BG
 	real, dimension(nsg,nsg) :: AG
@@ -35,7 +35,7 @@
 	filter = 1.57
 	
 	open(10,file='Results.dat')
-	write(10,*)'# VELOCITY PROFILES IN TIME'
+	write(10,*)'# VELOCITY PROFILES IN TIME WITH FAC = ', fac
 	write(10,*)''
 	write(10,*)'# TOTAL POINTS IN GRID = ', nsg
 	write(10,*)'# VARIABLES = z, u(z)'

@@ -15,7 +15,8 @@ time = 20                   # Tiempo total de señal
 dt = 1./20000               # Separacion de tiempo en señales
 pasos = int(time / dt)      # Pasos de tiempo calculados
 periodo = 1                 # Periodo de la onda
-vmed = 1                    # Velocidad media de la onda (desp vertical)
+vmed = 1.                   # Velocidad media de la onda (desp vertical)
+amp = 1.                    # Amplitud de la onda a simular
 
 
 # Definiendo vector de velocidades
@@ -26,7 +27,7 @@ for i in range(0, pasos):
     
     tac = i * dt    
     if tac <= 1. :        
-        vel[i] = vmed + np.sin(2 * np.pi * tac)        
+        vel[i] = vmed + np.sin(2 * np.pi * tac) * amp        
     else:        
         vel[i] = vmed
 

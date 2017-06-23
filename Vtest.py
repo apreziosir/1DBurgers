@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jun 23 10:34:24 2017
-
+Script para generar ondas de prueba tipo seno para el programa de Burgers 1D
+Realizado para ver comportamientos extraños del programa. 
+Se debe revisar este tema con Jorge Escobar. (APR)
 @author: toni
 """
 

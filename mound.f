@@ -11,7 +11,7 @@
 	save
 	
 ! 	1. Viscosity
-	real, parameter :: nu = 0.05 
+	real, parameter :: nu = 3.0 
 
 !	2. Fac en bc1dsub
 	real, parameter :: fac = 1e10

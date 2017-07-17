@@ -11,8 +11,8 @@ points = 96
 freq = 1/200.
 
 
-rdir = '/media/toni/Toni_LaForge/Results_Burgers1D/nu50/'
-rfil = '170622_Results_10037.dat'
+rdir = '/media/toni/Toni_LaForge/Results_Burgers1D/nu30/'
+rfil = '170717_Results10010.dat'
 
 # Loading data to script (change rdir and rfil to change data)
 data = np.loadtxt(rdir + rfil, comments = '#')

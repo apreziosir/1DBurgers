@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 time = 20                   # Tiempo total de señal
 dt = 1./20000               # Separacion de tiempo en señales
 pasos = int(time / dt)      # Pasos de tiempo calculados
-periodo = 1                 # Periodo de la onda
-vmed = 1.                   # Velocidad media de la onda (desp vertical)
+periodo = 0.1               # Periodo de la onda
+vmed = 0.                   # Velocidad media de la onda (desp vertical)
 amp = 1.                    # Amplitud de la onda a simular
 
 

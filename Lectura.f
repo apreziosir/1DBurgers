@@ -10,7 +10,7 @@
 	integer :: i
 	real,intent(out) :: mediavel
 	
-	open(55, file= 'Refinado100_10.dat', status='old')
+	open(55, file= 'testsignal.dat', status='old')
 	write(*,*) pasos
 	do i = 1, pasos 
 		read(55,*) crudas(i)

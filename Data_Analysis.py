@@ -10,9 +10,11 @@ import matplotlib.pyplot as plt
 points = 96
 freq = 1/200.
 
-
-rdir = '/media/toni/Toni_LaForge/Results_Burgers1D/nu30/'
-rfil = '170717_Results10010.dat'
+# Extracción de datos del computador portátil - comentar o quitar comentarios 
+# rdir = '/media/toni/Toni_LaForge/Results_Burgers1D/nu30/'
+# Extracción de datos desde apollo 
+rdir = '/media/unadmin/Apollo M100 USB3/Doctorado/Modelos/Burgers_1D/Results_Burgers1D/nu05/'
+rfil = '170622_Results_10037.dat'
 
 # Loading data to script (change rdir and rfil to change data)
 data = np.loadtxt(rdir + rfil, comments = '#')
@@ -96,5 +98,18 @@ ax3 = fig1.add_subplot(3, 1, 3, sharex = ax1, sharey = ax1)
 ax3.plot(data1[:, 80])
 plt.setp(ax1.get_xticklabels(), visible=False)
 plt.setp(ax2.get_xticklabels(), visible=False)
+
+# Plotting signal in space for different early times
+fig5 = plt.figure()
+ax1 = fig5.add_subplot(1, 1, 1)
+ax1.plot(np.abs(data1[:,1]), coords, label = 't = 0.005 s')
+ax1.plot(np.abs(data1[:,2]), coords, label = 't = 0.010 s')
+ax1.plot(np.abs(data1[:,3]), coords, label = 't = 0.015 s')
+#ax1.plot(np.abs(data1[:,4]), coords, label = 't = 0.020 s')
+#ax1.plot(np.abs(data1[:,11]), coords, label = 't = 0.025 s')
+plt.ylim(1, 0)
+plt.xlabel(r'Velocity $(m/s)$')
+plt.ylabel(r'Depth $(m)$')
+plt.legend()
 
 plt.show()

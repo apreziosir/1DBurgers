@@ -13,7 +13,7 @@ freq = 1/200.
 # Extracción de datos del computador portátil - comentar o quitar comentarios 
 # rdir = '/media/toni/Toni_LaForge/Results_Burgers1D/nu30/'
 # Extracción de datos desde apollo 
-rdir = '/media/unadmin/Apollo M100 USB3/Doctorado/Modelos/Burgers_1D/Results_Burgers1D/nu05/'
+rdir = '/media/unadmin/Apollo M100 USB3/Doctorado/Modelos/Burgers_1D/Results_Burgers1D/nu50/'
 rfil = '170622_Results_10037.dat'
 
 # Loading data to script (change rdir and rfil to change data)
@@ -65,13 +65,13 @@ plt.setp(ax2.get_xticklabels(), visible = False)
 # Plotting detail of values over height
 fig2 = plt.figure()
 ax1 = fig2.add_subplot(3, 1, 1)
-ax1.plot(time[0:300], data1[0,0:300])
+ax1.plot(time[0:100], data1[0,0:100])
 plt.grid()
 ax2 = fig2.add_subplot(3, 1, 2, sharex=ax1, sharey = ax1)
-ax2.plot(time[0:300], data1[10,0:300])
+ax2.plot(time[0:100], data1[10,0:100])
 plt.grid()
 ax3 = fig2.add_subplot(3, 1, 3, sharex = ax1, sharey = ax1)
-ax3.plot(time[0:300], data1[60,0:300])
+ax3.plot(time[0:100], data1[60,0:100])
 plt.grid()
 plt.setp(ax1.get_xticklabels(), visible=False)
 plt.setp(ax2.get_xticklabels(), visible=False)
